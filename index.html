@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <section class="dashboardcontainer">
+      <article class="leftcontainer">
+        <div class="inputfields">
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Search for a city..."
+          />
+          <input
+            onclick="getWeatherData()"
+            type="submit"
+            value="Search"
+            class="btn"
+          />
+        </div>
+        <div class="todaysoutput">
+          <div class="outputcontainer"></div>
+        </div>
+      </article>
+      <article class="rightcontainer">
+        <section class="forecastcontainer"></section>
+        <section class="outputcontainersec"></section>
+      </article>
+    </section>
+    <main></main>
+    <footer></footer>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>
